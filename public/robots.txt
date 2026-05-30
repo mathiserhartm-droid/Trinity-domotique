@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin-panel.html
+
+Sitemap: https://trinity-domotique.fr/sitemap.xml

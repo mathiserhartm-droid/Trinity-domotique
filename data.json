@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "last_updated": "2026-05-03",
+    "site_name": "Trinity Domotique",
+    "version": "1.0"
+  },
+  "hero": {
+    "titre": "Votre maison,\nreconnectée.",
+    "sous_titre": "Volets, lumières, portail, TV, piscine, énergie — tout centralisé, tout automatisé.",
+    "typewriter_strings": ["home --install", "volets --auto", "portail --connect", "lumières --ambiance", "energie --optimize"],
+    "cta_principal": "Demander mon devis et mon rendez-vous gratuit",
+    "cta_secondaire": "Découvrir nos services",
+    "cta_hint": "Déplacement offert · Zéro engagement · Réponse sous 24 h"
+  },
+  "personnages": {
+    "neo": {
+      "nom": "NEO — L'Architecte",
+      "description": "Je conçois votre installation sur-mesure, adaptée à votre maison et à votre mode de vie.",
+      "couleur": "neo"
+    },
+    "morpheus": {
+      "nom": "MORPHEUS — Le Codeur",
+      "description": "J'automatise chaque scénario. Votre maison répond avant même que vous le demandiez.",
+      "couleur": "morpheus"
+    },
+    "trinity": {
+      "nom": "TRINITY — L'Harmonie",
+      "description": "Je relie chaque appareil à votre famille. Un seul écran. Toute la maison.",
+      "couleur": "trinity"
+    }
+  },
+  "services": [
+    {
+      "id": "volets",
+      "titre": "Volets Automatiques",
+      "description": "Programmation, commande vocale, automatisation au lever/coucher du soleil.",
+      "icon": "🪟"
+    },
+    {
+      "id": "portail",
+      "titre": "Portail & Garage",
+      "description": "Commande à distance, détection de présence, intégration smartphone.",
+      "icon": "🚗"
+    },
+    {
+      "id": "lumieres",
+      "titre": "Lumières Connectées",
+      "description": "Scènes d'ambiance, commande vocale, détection de présence.",
+      "icon": "💡"
+    },
+    {
+      "id": "tv",
+      "titre": "TV & Multimédia",
+      "description": "Allumer, changer de chaîne, régler le volume à la voix ou depuis l'app.",
+      "icon": "📺"
+    },
+    {
+      "id": "piscine",
+      "titre": "Gestion Piscine",
+      "description": "Chauffage, pompe, traitement — automatisés selon la météo.",
+      "icon": "🏊"
+    },
+    {
+      "id": "voiture",
+      "titre": "Recharge Voiture Électrique",
+      "description": "Optimisation heures creuses, suivi consommation, recharge intelligente.",
+      "icon": "⚡"
+    },
+    {
+      "id": "energie",
+      "titre": "Optimisation Énergétique",
+      "description": "Tableau de bord consommation, alertes, économies réelles.",
+      "icon": "📊"
+    },
+    {
+      "id": "installation",
+      "titre": "Installation Clé en Main",
+      "description": "Achat matériel + intervention + configuration complète.",
+      "icon": "🔧"
+    },
+    {
+      "id": "siri",
+      "titre": "Intégration iPhone/Siri",
+      "description": "HomeKit, HomePod, app Maison Apple — tout fonctionne naturellement.",
+      "icon": "🍎"
+    },
+    {
+      "id": "homeassistant",
+      "titre": "Serveur Home Assistant",
+      "description": "Serveur installé chez vous, interface centralisée pour tous vos appareils.",
+      "icon": "🖥️"
+    }
+  ],
+  "contact": {
+    "email": "trinity-domotique.contact@gmail.com",
+    "telephone": "À compléter",
+    "adresse": "4 Route de Gauré, 31570 Bourg-Saint-Bernard",
+    "zone": "Toulouse et sa banlieue",
+    "instagram": "@mathis_rhrt",
+    "calendly_url": ""
+  },
+  "seo": {
+    "titre_site": "Trinity Domotique — Maison Connectée | Toulouse",
+    "description": "Installation domotique haut de gamme à Toulouse. Volets, portail, lumières, Home Assistant. Devis et déplacement gratuits.",
+    "og_image": "assets/images/og-image.jpg"
+  }
+}
