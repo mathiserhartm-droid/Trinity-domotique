@@ -31,7 +31,7 @@ export default function MatrixIntro() {
       return;
     }
 
-    const isReturning = !!localStorage.getItem('matrix_seen');
+    const isReturning = !!sessionStorage.getItem('matrix_seen');
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (isReturning) { setDismissed(true); return; }
@@ -41,7 +41,7 @@ export default function MatrixIntro() {
       setText2(LINE2);
       setText3(LINE3);
       setPhase('cta');
-      localStorage.setItem('matrix_seen', '1');
+      sessionStorage.setItem('matrix_seen', '1');
       return;
     }
 
@@ -89,7 +89,7 @@ export default function MatrixIntro() {
     const t = setTimeout(() => {
       setPhase('cta');
       setSkipVisible(true);
-      localStorage.setItem('matrix_seen', '1');
+      sessionStorage.setItem('matrix_seen', '1');
     }, 700);
     return () => clearTimeout(t);
   }, [phase, text3]);

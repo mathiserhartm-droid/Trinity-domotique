@@ -1280,6 +1280,11 @@ address {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.potentiel__grid .potentiel__tile {
+  display: flex;
 }
 
 /* Tuile service */
@@ -1289,6 +1294,7 @@ address {
   padding: var(--space-xl) var(--space-lg);
   position: relative;
   overflow: hidden;
+  width: 100%;
   transition: border-color var(--transition-base), box-shadow var(--transition-base),
               transform var(--transition-slow);
 }
@@ -1339,6 +1345,211 @@ address {
   color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 0;
+}
+
+/* ── Section compatibilité — encadré "le secret" ── */
+.compat__secret {
+  margin-top: var(--space-xl);
+  padding: var(--space-xl);
+  border: 1px solid rgba(0, 204, 102, 0.35);
+  background: rgba(0, 204, 102, 0.05);
+  position: relative;
+}
+
+.compat__secret-badge {
+  position: absolute;
+  top: -0.75em;
+  left: var(--space-lg);
+  padding: 0.2em 0.8em;
+  background: var(--color-primary);
+  color: #000;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.compat__secret-text {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: var(--space-sm);
+}
+
+.compat__secret-text:last-child {
+  margin-bottom: 0;
+}
+
+.compat__secret-text strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.compat__price {
+  font-family: var(--font-mono);
+  font-size: 1.1em;
+  color: var(--color-primary) !important;
+  font-weight: 700;
+}
+
+/* ── Section compatibilité — scénario vocal ── */
+.compat__scenario {
+  margin-top: var(--space-2xl);
+  border: 1px solid rgba(0, 204, 102, 0.18);
+  background: rgba(0, 204, 102, 0.03);
+  padding: var(--space-xl) var(--space-xl);
+  position: relative;
+}
+
+.compat__scenario::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--color-primary);
+  opacity: 0.5;
+}
+
+.compat__scenario-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-bottom: var(--space-md);
+}
+
+.compat__scenario-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  opacity: 0.8;
+}
+
+.compat__scenario-intro {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: var(--space-lg);
+  max-width: 680px;
+}
+
+.compat__voice-examples {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.compat__voice-cmd {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0.6rem var(--space-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  transition: border-color var(--transition-base);
+}
+
+.compat__voice-cmd:hover {
+  border-color: rgba(0, 204, 102, 0.3);
+}
+
+.compat__assistant {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+  flex-shrink: 0;
+  min-width: 60px;
+  text-align: center;
+}
+
+.compat__assistant--alexa {
+  background: rgba(0, 160, 210, 0.15);
+  color: #00a0d2;
+  border: 1px solid rgba(0, 160, 210, 0.3);
+}
+
+.compat__assistant--siri {
+  background: rgba(200, 120, 255, 0.12);
+  color: #c878ff;
+  border: 1px solid rgba(200, 120, 255, 0.3);
+}
+
+.compat__assistant--google {
+  background: rgba(255, 180, 0, 0.12);
+  color: #ffb400;
+  border: 1px solid rgba(255, 180, 0, 0.3);
+}
+
+.compat__phrase {
+  color: var(--color-text);
+  font-style: italic;
+}
+
+.compat__scenario-footer {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* ── Section rêves — grille d'équipements ── */
+.reves__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.reves__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.55em 1em;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  transition: border-color var(--transition-base), color var(--transition-base), background var(--transition-base);
+  cursor: default;
+}
+
+.reves__item:hover {
+  border-color: rgba(0, 204, 102, 0.35);
+  color: var(--color-text);
+  background: rgba(0, 204, 102, 0.04);
+}
+
+.reves__icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.reves__label {
+  white-space: nowrap;
+}
+
+.reves__tagline {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  opacity: 0.75;
+  font-style: italic;
+  margin-top: var(--space-md);
 }
 
 /* Section étapes (Comment ça marche) */
